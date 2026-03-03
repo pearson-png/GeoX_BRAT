@@ -26,6 +26,8 @@ class Toolbox(object):
                         Conservation_Restoration_tool, Data_Capture_Validation_tool, Drainage_Area_Check_tool,
                         Layer_Package_Generator_tool, Collect_Summary_Products_tool]
 
+print("toolbox class created")
+
 class BRAT_project_tool(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
@@ -389,6 +391,7 @@ class BRAT_table_tool(object):
 						p[18].valueAsText)
         return
 
+print("BRAT_table_tool class created")
 
 class BRAT_braid_handler(object):
     def __init__(self):
@@ -429,6 +432,7 @@ class BRAT_braid_handler(object):
         BRAT_Braid_Handler.main(p[0].valueAsText)
         return
 
+print("BRAT_braid_handler class created")
 
 class iHyd_tool(object):
     def __init__(self):
@@ -494,6 +498,8 @@ class iHyd_tool(object):
 				  p[3].valueAsText)
         return
 
+print("iHyd_tool class created")
+
 class Veg_FIS_tool(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
@@ -533,6 +539,8 @@ class Veg_FIS_tool(object):
         importlib.reload(Veg_FIS)
         Veg_FIS.main(p[0].valueAsText)
         return
+
+print("Veg_FIS_tool class created")
 
 class Comb_FIS_tool(object):
     def __init__(self):
@@ -601,6 +609,7 @@ class Comb_FIS_tool(object):
                       p[3].valueAsText)
         return
 
+print("Comb_FIS_tool class created")
 
 class Conservation_Restoration_tool(object):
     def __init__(self):
@@ -685,6 +694,8 @@ class Conservation_Restoration_tool(object):
 									  p[5].valueAsText)
         return
 
+print("Conservation_Restoration_tool class created")
+
 class Data_Capture_Validation_tool(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
@@ -750,6 +761,7 @@ class Data_Capture_Validation_tool(object):
                                      p[2].valueAsText,
 									 p[3].valueAsText)
 
+print("Data_Capture_Validation_tool class created")
 
 class Drainage_Area_Check_tool(object):
     def __init__(self):
@@ -793,6 +805,7 @@ class Drainage_Area_Check_tool(object):
         Drainage_Area_Check.main(p[0].valueAsText)
         return
 
+print("Drainage_Area_Check_tool class created")
 
 class Layer_Package_Generator_tool(object):
     def __init__(self):
@@ -849,6 +862,7 @@ class Layer_Package_Generator_tool(object):
         Layer_Package_Generator.main(p[0].valueAsText, p[1].valueAsText, p[2].valueAsText)
         return
 
+print("Layer_Package_Generator_tool class created")
 
 class Collect_Summary_Products_tool(object):
     def __init__(self):
@@ -932,3 +946,5 @@ class Collect_Summary_Products_tool(object):
 									   p[4].valueAsText,
 									   p[5].valueAsText)
         return
+
+print("Collect_Summary_Products_tool class created")
